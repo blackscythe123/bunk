@@ -1,0 +1,46 @@
+name: bunk
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  fl_chart: ^0.68.0
+  shared_preferences: ^2.2.3
+  intl: ^0.19.0
+  csv: ^5.1.1 
+  path_provider: ^2.1.4
+  wave: ^0.2.2
+ 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/icon/icon.png
+  fonts:
+    - family: NotoSans
+      fonts:
+        - asset: assets/fonts/NotoSans-Regular.ttf
+        - asset: assets/fonts/NotoSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/NotoSans-Italic.ttf
+          style: italic
+        - asset: assets/fonts/NotoSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+flutter_launcher_icons:
+  android: "ic_launcher"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21 # Optional, for adaptive icons
+  adaptive_icon_background: "#FFFFFF" # Optional, for Android adaptive icons
+  adaptive_icon_foreground: "assets/icon/icon.png" # Optional, for Android adaptive icons
